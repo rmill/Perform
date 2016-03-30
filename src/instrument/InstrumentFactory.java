@@ -1,24 +1,28 @@
 package instrument;
 import java.lang.reflect.Constructor;
+import com.cycling74.max.MaxObject;
 
 public class InstrumentFactory {
 
-	public Instrument getInstrument(String instrumentName) throws ClassNotFoundException {
+	public Instrument getInstrument (Identity identity) {
+		return null;
+	}
+	
+	public Instrument getInstrument(String instrumentName) {
 		if (instrumentName == null) {
 			return null;
 		}
 		
 		String className = "instrument."  + instrumentName.replace(" ", "");
 		Class<?> instrumentClass;
-		
-		instrumentClass = Class.forName(className);
 		Instrument instance = null;
 		
 		try {
+			instrumentClass = Class.forName(className);
 			Constructor<?> constructor = instrumentClass.getConstructor();
 			instance = (Instrument)constructor.newInstance();
 		} catch (Exception e) {
-			// Log error
+			MaxObject.error("Instrument '" + instrumentName + "' could not be found.");
 		}
 		
 		return instance;

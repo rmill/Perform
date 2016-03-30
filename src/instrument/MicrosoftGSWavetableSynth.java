@@ -1,5 +1,5 @@
 package instrument;
 
-public class MicrosoftGSWavetableSynth implements Instrument {
+public class MicrosoftGSWavetableSynth extends Instrument {
 
 }
