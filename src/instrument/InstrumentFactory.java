@@ -1,5 +1,6 @@
 package instrument;
 import java.lang.reflect.Constructor;
+
 import com.cycling74.max.MaxObject;
 
 public class InstrumentFactory {

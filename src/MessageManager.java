@@ -5,7 +5,6 @@ import com.cycling74.max.DataTypes;
 import com.cycling74.max.MaxBox;
 import com.cycling74.max.MaxClock;
 import com.cycling74.max.MaxObject;
-import com.cycling74.max.MaxPatcher;
 
 import midi.SysexMessage;
 import midi.IdentityRequest;

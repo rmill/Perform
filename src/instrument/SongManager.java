@@ -1,3 +1,4 @@
+package instrument;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
@@ -6,7 +7,6 @@ import java.util.List;
 
 import com.cycling74.max.*;
 
-import instrument.Instrument;
 import song.Song;
 import song.SongFactory; 
 

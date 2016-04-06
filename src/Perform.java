@@ -1,5 +1,6 @@
 import com.cycling74.max.MaxObject;
 
+import instrument.SongManager;
 import song.Song;
 
 public class Perform extends MaxObject {
@@ -9,7 +10,7 @@ public class Perform extends MaxObject {
 	
 	Perform() {
 		this.instrumentManager = new InstrumentManager();
-		this.songManager = new SongManager();
+		//this.songManager = new SongManager();
 	}
 	
 	public void playSong(String name) {
